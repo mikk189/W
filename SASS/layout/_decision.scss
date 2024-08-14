@@ -1,58 +1,65 @@
-.decision {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(/img/hero.jpg);
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+.decision .container {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/img/hero.jpg);
+  width: 100%;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 198px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-  
-  &__container {
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
-  
-  &__title {
-    width: 696px;
-    height: 120px;
-    color: #fff;
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    /* 136.364% */
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    margin: 30px auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 280px;
   }
-  
-  &__button {
-    display: block;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.875;
-    /* 187.5% */
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 34px;
-    padding-right: 34px;
-    margin: 0 auto;
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  &__button:hover {
-    background-color: white;
-    color: #2196f3;
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+.decision__container {
+}
+
+.decision__title {
+  width: 360px;
+  margin: 0 auto;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 42px; /* 161.538% */
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+}
+
+.decision__button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196f3;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  margin: 0 auto;
+  margin-top:30px;
+}
+
+.decision__button:hover {
+  background-color: white;
+  color: #2196f3;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

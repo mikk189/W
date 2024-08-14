@@ -1,7 +1,23 @@
 .container {
-  width: 1200px;
+  width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -41,24 +57,45 @@ li {
 }
 
 .header {
-  height: 80px;
   display: flex;
-  align-items: center;
+  height: 60px;
+  padding: 16px 0;
   justify-content: space-between;
-  padding: 25px 0;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+  }
 }
 .header__logo {
-  color: #000;
+  color: #212121;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 .header__items {
-  display: flex;
+  display: block;
   gap: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .header__items {
+    display: flex;
+  }
+}
 .header__contact {
+  display: none;
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -67,6 +104,16 @@ li {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .header__contact {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    display: flex;
+  }
+}
 .header__contact:hover {
   color: #2196f3;
   transition-property: color;
@@ -74,14 +121,22 @@ li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.Web {
-  color: #2196f3;
+.nav {
+  display: none;
 }
-
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+  }
+}
 .nav__list {
   display: flex;
   gap: 50px;
-  margin-right: 344px;
 }
 .nav__item {
   position: relative;
@@ -116,46 +171,64 @@ li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.decision {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero.jpg);
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+.Web {
+  color: #2196f3;
 }
+
+.decision .container {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero.jpg);
+  width: 100%;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 198px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .decision .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .decision .container {
+    width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
+}
+
 .decision__title {
-  width: 696px;
-  height: 120px;
+  width: 360px;
+  margin: 0 auto;
+  justify-content: center;
   color: #fff;
   text-align: center;
-  font-size: 44px;
+  font-family: Roboto;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
-  /* 136.364% */
-  letter-spacing: 2.64px;
+  line-height: 42px; /* 161.538% */
+  letter-spacing: 1.56px;
   text-transform: uppercase;
-  margin: 30px auto;
 }
+
 .decision__button {
   display: block;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  /* 187.5% */
-  letter-spacing: 0.96px;
+  width: 200px;
+  height: 50px;
   border-radius: 4px;
   background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 34px;
-  padding-right: 34px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
   margin: 0 auto;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 30px;
 }
+
 .decision__button:hover {
   background-color: white;
   color: #2196f3;
