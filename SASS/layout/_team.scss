@@ -1,60 +1,60 @@
-.team {
-    background: #f5f4fa;
-    height: 648px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+// .team {
+//     background: #f5f4fa;
+//     height: 648px;
+//     padding-top: 94px;
+//     padding-bottom: 94px;
   
   
-  &__title {
-    color: #212121;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    text-align: center;
-    margin-bottom: 50px;
-  }
+//   &__title {
+//     color: #212121;
+//     font-size: 36px;
+//     font-weight: 700;
+//     letter-spacing: 1.08px;
+//     text-align: center;
+//     margin-bottom: 50px;
+//   }
   
-  &__list {
-    display: flex;
-    gap: 30px;
-    margin: 0 auto;
-  }
+//   &__list {
+//     display: flex;
+//     gap: 30px;
+//     margin: 0 auto;
+//   }
   
-  &__items {
-    width: 270px;
-    height: 428px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 4px 4px;
-    background: #fff;
-    gap: 30px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  }
+//   &__items {
+//     width: 270px;
+//     height: 428px;
+//     flex-shrink: 0;
+//     border-radius: 0px 0px 4px 4px;
+//     background: #fff;
+//     gap: 30px;
+//     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+//       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+//   }
   
-  &__img {
-    width: 270px;
-    height: 260px;
-  }
+//   &__img {
+//     width: 270px;
+//     height: 260px;
+//   }
   
-  &__name {
-    display: flex;
-    justify-content: center;
-    color: #212121;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.48px;
-    margin-top: 30px;
-  }
+//   &__name {
+//     display: flex;
+//     justify-content: center;
+//     color: #212121;
+//     font-size: 16px;
+//     font-weight: 500;
+//     letter-spacing: 0.48px;
+//     margin-top: 30px;
+//   }
   
-  &__work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #757575;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.48px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-}
+//   &__work {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     color: #757575;
+//     font-size: 16px;
+//     font-weight: 400;
+//     letter-spacing: 0.48px;
+//     margin-top: 10px;
+//     margin-bottom: 30px;
+//   }
+// }
