@@ -1,42 +1,15 @@
 .details {
     margin-top: 98px;
     margin-bottom: 98px;
-  }
+
   
-  .details-list {
+  &__list {
     display: flex;
     gap: 30px;
     justify-content: space-between;
   }
   
-  .img-box {
-    width: 270px;
-    height: 120px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #f5f4fa;
-    margin-bottom: 30px;
-    padding: 25px 100px;
-  }
-  
-  .img-box-antena {
-    display: flex;
-  }
-  
-  .img-box-clock {
-    display: flex;
-  }
-  
-  .img-box-diagram {
-    display: flex;
-  }
-  
-  .img-box-astronaut {
-    display: flex;
-    margin-bottom: 30px;
-  }
-  
-  .details-title {
+  &__title {
     color: #212121;
     font-size: 14px;
     font-weight: 700;
@@ -44,7 +17,7 @@
     text-transform: uppercase;
   }
   
-  .details-text {
+  &__text {
     color: #757575;
     font-size: 14px;
     font-weight: 400;
@@ -53,3 +26,32 @@
     letter-spacing: 0.42px;
     margin-top: 10px;
   }
+}
+  .img__box {
+    width: 270px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+  
+    &__box__antena {
+    display: flex;
+  }
+  
+  &__clock {
+    display: flex;
+  }
+  
+  &__diagram {
+    display: flex;
+  }
+  
+  &__astronaut {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+}

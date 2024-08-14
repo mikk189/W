@@ -7,12 +7,12 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+
+  
+  &__container {
   }
   
-  .decision-container {
-  }
-  
-  .decision-title {
+  &__title {
     width: 696px;
     height: 120px;
     color: #fff;
@@ -26,7 +26,7 @@
     margin: 30px auto;
   }
   
-  .decision-button {
+  &__button {
     display: block;
     color: #fff;
     text-align: center;
@@ -48,10 +48,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .decision-button:hover {
+  &__button:hover {
     background-color: white;
     color: #2196f3;
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }g
+  }
+}

@@ -1,9 +1,9 @@
 .about {
     height: 386px;
     margin-bottom: 96px;
-  }
+
   
-  .about-title {
+  &__title {
     color: #212121;
     text-align: center;
     font-size: 36px;
@@ -12,16 +12,16 @@
     padding-bottom: 50px;
   }
   
-  .about-list {
+  &__list {
     display: flex;
     gap: 30px;
   }
   
-  .about-items {
+  &__items {
     position: relative;
   }
   
-  .about-text {
+  &__text {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -38,10 +38,10 @@
     text-transform: uppercase;
   }
   
-  .about-img {
+  &__img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
     gap: 30px;
   }
-  
+}
