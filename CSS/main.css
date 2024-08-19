@@ -1,22 +1,22 @@
 .container {
-  min-width: 240px;
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -60,6 +60,7 @@ li {
   display: flex;
   height: 60px;
   padding: 16px 0;
+  align-items: center;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
@@ -175,9 +176,10 @@ li {
   color: #2196f3;
 }
 
-.decision .container {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(img/hero.jpg);
+.decision {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
   height: 400px;
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 198px;
   background-repeat: no-repeat;
@@ -185,23 +187,22 @@ li {
   background-position: center;
 }
 @media screen and (min-width: 768px) {
-  .decision .container {
-    width: 768px;
+  .decision {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .decision .container {
-    width: 1200px;
+  .decision {
+    width: 100%;
     padding-top: 200px;
     padding-bottom: 280px;
   }
 }
-
 .decision__title {
   width: 360px;
   margin: 0 auto;
   justify-content: center;
-  color: #fff;
+  color: #FFF;
   text-align: center;
   font-family: Roboto;
   font-size: 26px;
@@ -210,7 +211,11 @@ li {
   letter-spacing: 1.56px;
   text-transform: uppercase;
 }
-
+@media screen and (min-width: 1200px) {
+  .decision__title {
+    width: 696px;
+  }
+}
 .decision__button {
   display: block;
   width: 200px;
@@ -227,11 +232,122 @@ li {
   margin: 0 auto;
   margin-top: 30px;
 }
-
 .decision__button:hover {
   background-color: white;
   color: #2196f3;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.details {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .details {
+    margin-top: 98px;
+    margin-bottom: 98px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .details__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details__list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+}
+.details__title {
+  display: flex;
+  width: 270px;
+  justify-content: center;
+  margin: 0 auto;
+  color: #212121;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .details__title {
+    margin: 0;
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details__title {
+    justify-content: start;
+  }
+}
+.details__text {
+  width: 450px;
+  height: 50px;
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .details__text {
+    width: 354px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details__text {
+    width: 270px;
+    height: 72px;
+  }
+}
+
+.img__box {
+  width: 450px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+@media screen and (min-width: 768px) {
+  .img__box {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img__box {
+    width: 270px;
+    height: 120px;
+  }
+}
+.img__box__antena {
+  display: flex;
+  justify-content: center;
+}
+.img__box__clock {
+  display: flex;
+  justify-content: center;
+}
+.img__box__diagram {
+  display: flex;
+  justify-content: center;
+}
+.img__box__astronaut {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
