@@ -116,6 +116,15 @@ li {
     display: flex;
   }
 }
+.header .header__contact1 {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header__contact:hover {
   color: #2196f3;
   transition-property: color;
