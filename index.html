@@ -17,10 +17,8 @@
 
 <body>
   <header class="header container">
-    
     <a href="/" class="header__logo"><span class="Web">Web</span>Studio</a>
-    <nav class="nav">
-      <button
+    <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -39,6 +37,7 @@
             ></path>
           </svg>
         </button>
+    <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="#"><b>Студія</b></a>
@@ -57,6 +56,41 @@
         <a class="header__contact" href="">+380961111111</a>
       </li>
     </ul>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="black"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="nav__item">
+          <a class="nav__link" href="#"><b>Студія</b></a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="portfolio.html"><b>Портфоліо</b></a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href=""><b>Контакти</b></a>
+        </li>
+      </ul>
+      <ul class="header__list">
+        <li class="header__items">
+          <a class="header__contact" href="">E-mail</a>
+          <a class="header__contact" href="">+380961111111</a>
+        </li>
+      </ul>
+    </div>
   </header>
   <main>
     <section class="decision">
@@ -403,6 +437,7 @@
   </footer>
 
   <body>
+    <script src="mobile-menu.js"></script>
     <script src="modal.js">
     </script>
   </body>
