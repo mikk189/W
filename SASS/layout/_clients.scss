@@ -1,0 +1,42 @@
+.clients {
+  height: 500px;
+    .client__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      gap: 30px;
+    }
+  
+    .client__items {
+      height: 92px;
+      border-radius: 4px;
+      border: 1px solid #afb1b8;
+      width: calc((100% - 2 * 30px) / 2);
+    }
+  
+    .client__svg {
+      fill: #afb1b8;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .client__text {
+        margin-top: 30px;
+      color: #212121;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1.08px;
+    }
+    @media screen and (min-width: 768px) {
+      .client__items{
+        width: calc((100% - 3 * 30px) / 3);
+      }
+      }
+      @media screen and (min-width: 1200px) {
+        .client__items{
+        width: calc((100% - 6 * 30px) / 6);
+      }
+  }
+}
