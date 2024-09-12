@@ -138,6 +138,7 @@ li {
 .nav__list {
   display: flex;
   gap: 50px;
+  margin-left: -150px;
 }
 .nav__item {
   position: relative;
@@ -365,7 +366,7 @@ li {
   flex-wrap: wrap;
 }
 .team .team__items {
-  height: 460px;
+  height: 622px;
   flex-shrink: 0;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
